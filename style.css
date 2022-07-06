@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(53, 128, 179);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+}
+
+#getJokes {
+  height: 101px;
+  width: 101px;
+  border-radius: 50%;
+  border: 0px;
+  position: absolute;
+  top: 320px;
+  outline: none;
+}
+
+#facts {
+  width: 80vw;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  font-size: 20px;
+}
+
+.setting-top {
+  position: absolute;
+  font-size: 600px;
+  top: 72px;
+  z-index: -2;
+  animation-name: rotateIcon;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
